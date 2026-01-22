@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+register.sv
+register_test.sv
+-gui
+-access
++rwc

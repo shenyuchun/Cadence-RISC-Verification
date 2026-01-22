@@ -1,0 +1,22 @@
+ Root Cause Analysis (RCA)
+A. X-Propagation via unique case
+In the original control.sv, a unique case statement was used to calculate next_state. At time 0ns, current_state is uninitialized (X).
+
+The Violation: Since X does not match any valid state (e.g., INST_ADDR, IDLE) and there was no default branch, the unique case failed.
+
+The Consequence: This failure forced next_state to X. On the first rising clock edge, this X was latched into the state register, causing a total functional collapse of the Control Unit.
+
+B. Race Condition during Power-On Reset
+The testbench (cpu_test.sv) initialized master_clk to 1'b1.
+
+The Timing Gap: At simulation startup, a clock edge may occur before the asynchronous reset (rst_) has fully propagated to the registers.
+
+The Result: The FSM attempted to transition based on an invalid next_state (calculated from an uninitialized opcode or state), leading to the xx values observed at 95.0 ns.
+Corrective Actions
+Replace Manual Transitions: Use state.next() for linear state machines to eliminate the need for a next_state combinational logic block, reducing the risk of X propagation.
+
+Implement Default Outputs: Always apply a default value (e.g., 0) to all control signals at the beginning of an always_comb block. This prevents the creation of latches and ensures stable signals even if a case statement fails to match.
+
+Ensure Safe Initialization: In the testbench, initialize the clock to 0 and ensure the reset signal is asserted before the first active clock edge.
+
+Avoid unique without default: When using unique case, always provide a default branch to handle uninitialized or illegal states during the power-up sequence.

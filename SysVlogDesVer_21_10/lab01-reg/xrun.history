@@ -1,0 +1,2 @@
+s1(24Dec2025:00:40:29):  xrun register.sv register_test.sv 
+s2(24Dec2025:00:42:28):  xrun register.sv register_test.sv -gui -access +rwc 

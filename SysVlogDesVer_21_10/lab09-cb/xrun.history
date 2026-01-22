@@ -1,0 +1,9 @@
+s1(30Dec2025:19:39:47):  xrun flipflop.sv flipflop_test.sv -access rwc -gui 
+s2(30Dec2025:19:41:15):  xrun flipflop.sv flipflop_test.sv -access rwc -gui 
+s3(30Dec2025:19:41:43):  xrun flipflop.sv flipflop_test.sv -access rwc -gui 
+s4(30Dec2025:19:42:55):  xrun flipflop.sv flipflop_test.sv -access rwc -gui 
+s5(30Dec2025:19:44:40):  xrun flipflop.sv flipflop_test.sv -access rwc -gui 
+s6(30Dec2025:19:44:55):  xrun flipflop.sv flipflop_test.sv -access rwc -gui 
+s7(30Dec2025:19:45:45):  xrun flipflop.sv flipflop_test.sv -access rwc -gui 
+s8(30Dec2025:19:46:22):  xrun flipflop.sv flipflop_test.sv -access rwc -gui 
+s9(30Dec2025:20:03:26):  xrun flipflop.sv flipflop_test.sv -access rwc 

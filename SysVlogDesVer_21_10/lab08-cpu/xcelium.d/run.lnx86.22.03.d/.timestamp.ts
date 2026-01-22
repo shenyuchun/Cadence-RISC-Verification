@@ -1,0 +1,9 @@
+1767080596 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/register.sv
+1767080595 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/mem.sv
+1767080597 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/scale_mux.sv
+1767080589 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/cpu_test.sv
+1767080588 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/counter.sv
+1767080598 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/typedefs.sv
+1767080590 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/cpu.sv
+1767080587 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/control.sv
+1767080586 /home/grads/s/shenyuchun/cadence_sv/SysVlogDesVer_21_10/lab08-cpu/alu.sv
